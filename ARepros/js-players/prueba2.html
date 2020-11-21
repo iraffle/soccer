@@ -1,0 +1,13 @@
+<a id="0" onClick="mifuncion(this.id)">boton1</a>
+     <a id="1" onClick="mifuncion(this.id)">boton2</a>
+     <a id="2" onClick="mifuncion(this.id)">boton3</a>
+     <p id="demo">Prueba<p>
+     <script>
+     var miarreglo = [
+         "https://weather-lh.akamaihd.net/i/twc_1@92006/master.m3u8", "www.nike.com", "www.otra.com"];
+     function mifuncion(unclick){
+     var i = unclick;
+     var demo = miarreglo[i];
+     document.getElementById("demo").innerHTML = demo;
+     }
+     </script>
