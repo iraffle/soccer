@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <head>
+  <script type="text/javascript" charset="utf-8" src="http://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+  <!-- OR jsDelivr CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.comment/latest/comments.min.js"></script>
+</head>
+</head>
+<body>
+    <div id="player-wrapper"></div>
+    <script>
+    var player = new Clappr.Player({
+    source: "https://linear02-i.akamaihd.net/hls/live/837815/bemad/01.m3u8",
+    parentId: "#player-wrapper",
+    plugins: {
+        core: [Comments]
+      },
+
+      // Comment options
+      videoId: 1,
+      urlGetComments: "http://localhost/comments-video",
+      urlAddComments: "http://localhost/submit-comment",
+      iconComment: "fa fa-comment-o",
+      iconFont: "FontAwesome",
+      pointerColor: "orange",
+      enablePicture: true,
+      texts: {
+        addComment: 'Add a comment at',
+        addCommentLink: "Comment",
+        minutes: "minutes",
+        commentPlaceholder: "Put a comment here",
+        sendComment: "Send"
+      }
+});
+    </script>
+</body>
+</html>
