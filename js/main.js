@@ -1,3 +1,4 @@
+// HEADERS
 let headerFutbol = `
 <!--HEADER-->
             <header id="header" style="background-color: #fff;" data-uk-sticky="show-on-up: true; animation: uk-animation-fade; media: @l">
@@ -53,6 +54,13 @@ let headerFutbol = `
 		<!--/HEADER-->
 `;
 for(const ele of document.getElementsByClassName("header-futbol")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-basketball")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-nfl")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-tv")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-ufc")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-tennis")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-f1")){ele.innerHTML=(headerFutbol)};
+for(const ele of document.getElementsByClassName("header-box")){ele.innerHTML=(headerFutbol)};
 
 let socialJoin = `
 <!--SOCIAL-->
@@ -69,6 +77,8 @@ let socialJoin = `
   <!--/SOCIAL-->
 `;
 for(const ele of document.getElementsByClassName("social-join")){ele.innerHTML=(socialJoin)};
+
+// FILTERS
 
 let filterCompeticionFutbol = `
         <p>Filtra por competición:</p>
@@ -88,6 +98,12 @@ let filterCompeticionFutbol = `
         </div>
 `;
 for(const ele of document.getElementsByClassName("filter-competicion-futbol")){ele.innerHTML=(filterCompeticionFutbol)};
+for(const ele of document.getElementsByClassName("filter-competicion-basketball")){ele.innerHTML=(filterCompeticionFutbol)};
+for(const ele of document.getElementsByClassName("filter-competicion-nfl")){ele.innerHTML=(filterCompeticionFutbol)};
+for(const ele of document.getElementsByClassName("filter-competicion-ufc")){ele.innerHTML=(filterCompeticionFutbol)};
+for(const ele of document.getElementsByClassName("filter-competicion-tennis")){ele.innerHTML=(filterCompeticionFutbol)};
+for(const ele of document.getElementsByClassName("filter-competicion-f1")){ele.innerHTML=(filterCompeticionFutbol)};
+for(const ele of document.getElementsByClassName("filter-competicion-box")){ele.innerHTML=(filterCompeticionFutbol)};
 
 let scheduleCaption = `
 <caption>Semana - XX</caption>
